@@ -1,10 +1,13 @@
 package com.example.nguyentan.aclass;
 
+import android.util.Log;
+
 public class information {
 
     public   String  name;
     public   int  Age;
     public   String  Adress;
+    public static String TAG="ktsv";
 
     public String getName() {
         return name;
@@ -34,5 +37,10 @@ public class information {
         this.name = name;
         Age = age;
         Adress = adress;
+    }
+    void  getinformation(){
+        Log.d(TAG,this.name);
+        Log.d(TAG,String.valueOf(this.Age));
+        Log.d(TAG,this.Adress);
     }
 }
