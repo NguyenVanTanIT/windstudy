@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtMaTaiTieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="InputMaTaiLieu"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <EditText
+        android:id="@+id/txtNhaXuatBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="InputNhaXuatBan"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/txtInputsoBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="InputSoBan"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Save"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtShow"/>
+
+
+</LinearLayout>
