@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".quanLyTaiLieu.TaiLieuActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".quanLyTaiLieu.TaiLieuActivity"></activity>
         <activity android:name=".quanLyTaiLieu.sachActivity">
+
+        </activity>
+        <activity android:name=".Setting.setting_main_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
