@@ -24,7 +24,10 @@
         android:hint="InputAge"
         android:inputType="number"
         android:textSize="18sp"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+
+
+        />
 
     <EditText
         android:id="@+id/txtInputAdress"
