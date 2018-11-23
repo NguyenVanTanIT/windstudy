@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/txt_prefix"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="A"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/raw_item"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/txt_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Nguyễn Văn Tân"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        />
+
+
+
+</LinearLayout>

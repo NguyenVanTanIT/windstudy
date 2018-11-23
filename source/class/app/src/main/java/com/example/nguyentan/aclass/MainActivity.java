@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             String inputAdress=txtInputAdress.getText().toString();
 
             information getinformation = new information(inputName,inoutAge,inputAdress);
-            getinformation.getinformation();
+         //   getinformation.getinformation();
             String curentLog=txtView.getText().toString();
             txtView.setText(getinformation.name+"---"+
             getinformation.Age+"--"+getinformation.getAdress()+"\n"+ curentLog);
