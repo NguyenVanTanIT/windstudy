@@ -5,7 +5,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -14,12 +13,12 @@ import com.example.nguyentan.listview.R;
 import java.util.ArrayList;
 
 
-public class AdapterBTVN extends BaseAdapter{
-    ArrayList<information> arrayinformation;
+public class AdapterStudent extends BaseAdapter{
+    ArrayList<Student> arrayinformation;
     Context context;
     int resource;
 
-    public AdapterBTVN(Context context, int activity_baitapvenha, ArrayList<information> arrayStudent) {
+    public AdapterStudent(Context context, int activity_baitapvenha, ArrayList<Student> arrayStudent) {
     this.context =context;
     this.arrayinformation=arrayStudent;
     this.resource=activity_baitapvenha;
@@ -44,7 +43,7 @@ public class AdapterBTVN extends BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         if ( convertView ==null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_btvn,parent,false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_Student, parent, false);
             viewHolder= new ViewHolder();
             viewHolder.txtViewName=convertView.findViewById(R.id.txt_View_Name);
             viewHolder.txtViewPhone=convertView.findViewById(R.id.txt_View_Phone);
@@ -55,7 +54,7 @@ public class AdapterBTVN extends BaseAdapter{
             viewHolder=(ViewHolder) convertView.getTag();
         }
         
-        information  information= this.arrayinformation.get(position);
+        Student information= this.arrayinformation.get(position);
         viewHolder.txtViewName.setText("UserName :" +information.getNameStudent());
         viewHolder.txtViewPhone.setText("Phone Number: "+information.getPhone());
         viewHolder.txtViewAddress.setText("Address :"+information.getAddressStudent());

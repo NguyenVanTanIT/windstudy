@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".baitapvenha.baitapvenha">
+        <activity android:name=".baitapvenha.Main_Activity_Student">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

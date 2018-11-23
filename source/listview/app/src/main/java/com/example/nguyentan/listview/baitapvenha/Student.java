@@ -1,11 +1,11 @@
 package com.example.nguyentan.listview.baitapvenha;
 
-public class information {
+public class Student {
     public String NameStudent;
     public int Phone;
     public String AddressStudent;
 
-    public information(String nameStudent, int phone, String addressStudent) {
+    public Student(String nameStudent, int phone, String addressStudent) {
 
         NameStudent = nameStudent;
         Phone = phone;
@@ -36,6 +36,6 @@ public class information {
         AddressStudent = addressStudent;
     }
 
-    public information() {
+    public Student() {
     }
 }

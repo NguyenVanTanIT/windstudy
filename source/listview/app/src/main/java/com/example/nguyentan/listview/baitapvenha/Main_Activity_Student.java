@@ -1,31 +1,28 @@
 package com.example.nguyentan.listview.baitapvenha;
 
-import android.icu.util.LocaleData;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.nguyentan.listview.R;
 
 import java.util.ArrayList;
 
-public class baitapvenha extends AppCompatActivity {
+public class Main_Activity_Student extends AppCompatActivity {
 
     EditText txtNamest, txtPhone,txtAddress;
     Button btnSaVe;
     ListView lvSTD;
-    ArrayList<information> arrayStudent= new ArrayList<>();
-    AdapterBTVN adapterBTVN;
+    ArrayList<Student> arrayStudent= new ArrayList<>();
+    AdapterStudent adapterBTVN;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_baitapvenha);
+        setContentView(R.layout.activity_Student);
 
         addConTrols();
         addEvents();
@@ -39,14 +36,14 @@ public class baitapvenha extends AppCompatActivity {
                 int PhoneStudent = Integer.parseInt(txtPhone.getText().toString());
                 String AddressStudent = txtAddress.getText().toString();
 
-                information getinformation =new information(NameStudent,PhoneStudent,AddressStudent);
+                Student getinformation =new Student(NameStudent, PhoneStudent, AddressStudent);
 
              if (getinformation.NameStudent==null){
                  Toast.makeText(getApplicationContext(),"chưa có dữ liệu",Toast.LENGTH_LONG).show();
              }else {
 
                  arrayStudent.add(getinformation);
-                 adapterBTVN = new AdapterBTVN(getBaseContext(), R.layout.activity_baitapvenha, arrayStudent);
+                 adapterBTVN = new AdapterStudent(getBaseContext(), R.layout.activity_Student, arrayStudent);
                  lvSTD.setAdapter(adapterBTVN);
              }
             }
