@@ -58,7 +58,6 @@ public class PeopleAdapter extends BaseAdapter {
         }
         else {
             viewHolder =(ViewHolder) convertView.getTag();
-
         }
 
         People people= arrayPeople.get(position);

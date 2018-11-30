@@ -27,7 +27,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:hint="Year old"
+            android:hint="Age"
             android:textSize="18sp"
             />
         <TextView

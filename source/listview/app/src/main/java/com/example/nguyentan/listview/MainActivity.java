@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
         prepareData();
         init();
 
-        arrayAdapter= new ArrayDapter(getBaseContext(),R.layout.activity_main,arrName);
+        arrayAdapter= new ArrayDapter(getBaseContext(),
+                                      R.layout.activity_main,
+                                      arrName);
 //        arrayAdapter.data=arrName;
 //        arrayAdapter.context=this;
         LV_DS003.setAdapter(arrayAdapter);
