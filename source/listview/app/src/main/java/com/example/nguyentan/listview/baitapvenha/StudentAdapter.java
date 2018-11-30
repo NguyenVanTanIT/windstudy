@@ -13,12 +13,12 @@ import com.example.nguyentan.listview.R;
 import java.util.ArrayList;
 
 
-public class AdapterStudent extends BaseAdapter{
+public class StudentAdapter extends BaseAdapter{
     ArrayList<Student> arrayinformation;
     Context context;
     int resource;
 
-    public AdapterStudent(Context context, int activity_baitapvenha, ArrayList<Student> arrayStudent) {
+    public StudentAdapter(Context context, int activity_baitapvenha, ArrayList<Student> arrayStudent) {
     this.context =context;
     this.arrayinformation=arrayStudent;
     this.resource=activity_baitapvenha;
@@ -43,11 +43,11 @@ public class AdapterStudent extends BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         if ( convertView ==null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_Student, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_student, parent, false);
             viewHolder= new ViewHolder();
-            viewHolder.txtViewName=convertView.findViewById(R.id.txt_View_Name);
-            viewHolder.txtViewPhone=convertView.findViewById(R.id.txt_View_Phone);
-            viewHolder.txtViewAddress=convertView.findViewById(R.id.txt_View_Address);
+            viewHolder.txtViewName=convertView.findViewById(R.id.txt_view_name);
+            viewHolder.txtViewPhone=convertView.findViewById(R.id.txt_view_phone);
+            viewHolder.txtViewAddress=convertView.findViewById(R.id.txt_view_address);
             convertView.setTag(viewHolder);
         }
         else {
@@ -55,6 +55,7 @@ public class AdapterStudent extends BaseAdapter{
         }
         
         Student information= this.arrayinformation.get(position);
+
         viewHolder.txtViewName.setText("UserName :" +information.getNameStudent());
         viewHolder.txtViewPhone.setText("Phone Number: "+information.getPhone());
         viewHolder.txtViewAddress.setText("Address :"+information.getAddressStudent());

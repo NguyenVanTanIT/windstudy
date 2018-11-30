@@ -13,6 +13,13 @@ public class ArrayDapter extends BaseAdapter {
 
     ArrayList<String> data;
     Context context;
+    int resource;
+
+    public ArrayDapter(Context baseContext, int activity_main, ArrayList<String> arrName) {
+        this.context=baseContext;
+        this.resource=activity_main;
+        this.data=arrName;
+    }
 
     @Override
     public int getCount() {

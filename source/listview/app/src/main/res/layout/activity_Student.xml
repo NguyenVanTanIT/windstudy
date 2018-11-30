@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".baitapvenha.Main_Activity_Student"
+    tools:context=".baitapvenha.StudentActivity"
     android:orientation="vertical"
     android:background="@mipmap/backround_nature"
     >
@@ -52,7 +52,7 @@
             android:textColor="#ffff"
             />
         <EditText
-            android:id="@+id/txt_Phone"
+            android:id="@+id/txt_phone"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:background="@drawable/raw_item_edittext_btvn"
             android:paddingLeft="10dp"
             android:inputType="number"
-            android:lines="1" />
+             />
 
     </LinearLayout>
     <LinearLayout
@@ -90,18 +90,45 @@
             />
 
     </LinearLayout>
-    <Button
-        android:id="@+id/btn_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="save"
-        android:gravity="center"
-        android:layout_gravity="center"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
         android:layout_marginTop="20dp"
-        android:background="@drawable/raw_item_edittext_btvn"
-        />
+        >
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:background="@drawable/raw_item_edittext_btvn"
+            />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/raw_item_edittext_btvn"
+            />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upadate"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/raw_item_edittext_btvn"
+            />
+
+
+    </LinearLayout>
     <ListView
-        android:id="@+id/lv_DanhSach"
+        android:id="@+id/lv_danhsach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
